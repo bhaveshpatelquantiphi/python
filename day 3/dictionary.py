@@ -1,3 +1,5 @@
-city_state = {'mumbai': 'maharashtra', 'surat': 'gujarat','patna':'bihar'}
-print "The state is " +city_state[raw_input().lower()]
-print city_state.keys()
+city=(raw_input("Enter a particular city: "))
+dict = {'Mumbai': 'Maharashtra', 'Noida': 'Delhi', 'Hyderabad': 'Andhra Pradesh','Kerala': 'Tamil Nadu', 'Bhopal': 'Madhya Pradesh'}
+print ("Corresponding city is ", dict[city])
+state=(raw_input("Enter a state: "))
+print (list(dict.keys())[list(dict.values()).index(state)])
