@@ -32,7 +32,8 @@ def div(x,y):
     try:
         return x/y
     except ZeroDivisionError,e:
-        logging.warning("Can't divide by zero"+"\t"+str(x)+"  "+str(y)+"\t"+str(datetime.datetime.now()))
+        logging.
+        0.0("Can't divide by zero"+"\t"+str(x)+"  "+str(y)+"\t"+str(datetime.datetime.now()))
     print "Can't divide by zero"
 
 def mod(x,y):
