@@ -6,8 +6,10 @@
 # Input a day [1-31]: 23                                                  
 # The next date is [yyyy-mm-dd] 2016-8-24
 
+import datetime
 
-import datetime as dt
-today = dt.now()
-date_string = dt.strftime(today, '%m/%d/%Y')
-print(date_string) 
+try:
+	date = datetime.datetime(int(raw_input("Enter year : ")), int(raw_input("Enter month number : ")), int(raw_input("Enter date : ")))
+	print (date + datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+except ValueError as e:
+	print e
